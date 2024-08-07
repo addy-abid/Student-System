@@ -19,7 +19,7 @@ class Student {
         string GetLastName() const;
         string GetEmailAddress() const;
         int GetAge() const;
-        int* GetDaysToComplete() const;
+        const int* GetDaysToComplete() const;
         string GetDegreeProgram() const;
 
 

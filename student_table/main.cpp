@@ -1,14 +1,13 @@
-//
-//  main.cpp
-//  student_table
-//
-//  Created by Adnan Abid on 8/6/24.
-//
-
 #include <iostream>
+#include "student.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
+int main() {
+    Student student;
+    
+    student.SetAge(26);
+    
+    cout << "Age: " << student.GetAge() << endl;
+
     std::cout << "Hello, World!\n";
     return 0;
 }
