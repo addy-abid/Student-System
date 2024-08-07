@@ -1,13 +1,37 @@
-//
-//  student.hpp
-//  student_table
-//
-//  Created by Adnan Abid on 8/6/24.
-//
+#include <iostream>
+#include <string>
+#ifndef STUDENT_H
+#define STUDENT_H
+using namespace std;
 
-#ifndef student_hpp
-#define student_hpp
+class Student {
+    private:
+        int studentId;
+        string firstName;
+        string lastName;
+        string emailAddress;
+        int age;
+        int daysToComplete[5];
+        string degreeProgram;
+    public:
+        int GetStudentId() const;
+        string GetFirstName() const;
+        string GetLastName() const;
+        string GetEmailAddress() const;
+        int GetAge() const;
+        int* GetDaysToComplete() const;
+        string GetDegreeProgram() const;
 
-#include <stdio.h>
 
-#endif /* student_hpp */
+
+
+        void SetStudentId(int studentId);
+        void SetFirstName(string firstName);
+        void SetLastName(string lastName);
+        void SetEmailAddress(string emailAddress);
+        void SetAge(int age);
+        void SetDaysToComplete(int* daysToComplete);
+        void SetDegreeProgram(string degreeProgram);
+};
+
+#endif
